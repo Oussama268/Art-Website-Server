@@ -43,6 +43,12 @@ app.use("/playlists",playlistRoutes)
 
 
 
+app.get("/", (req, res) => {
+    res.json({message : "main api [age"})
+
+  
+})
+    
 
 
 
