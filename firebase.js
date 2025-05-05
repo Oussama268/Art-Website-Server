@@ -11,7 +11,7 @@ const firebaseStorage = process.env.FIREBASE_STORAGE;
 
 
 admin.initializeApp({
-    credential: admin.credential.cert(require(serviceAccountPath)),
+    credential: admin.credential.cert(serviceAccountPath),
     databaseURL: firebaseDatabaseUrl,
     storageBucket: firebaseStorage,
   });
