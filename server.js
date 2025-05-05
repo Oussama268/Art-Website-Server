@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(morgan('dev'));
 
 app.use(cors({
-  origin: "https://artuniverse.onrender.com",
+  origin: ["https://artuniverse.onrender.com", "http://localhost:5173"],
   methods: ["GET", "POST", "PUT", "DELETE"], 
   allowedHeaders: ["Content-Type", "Authorization"], 
 }));

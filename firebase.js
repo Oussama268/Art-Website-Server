@@ -5,7 +5,7 @@ const dotenv = require("dotenv")
 
 dotenv.config()
 
-const serviceAccountPath = process.env.FIREBASE_CREDENTIALS;
+const serviceAccountPath = JSON.parse(process.env.FIREBASE_CREDENTIALS);
 const firebaseDatabaseUrl = process.env.FIREBASE_DATABASE_URL;
 const firebaseStorage = process.env.FIREBASE_STORAGE;
 
